@@ -1,0 +1,99 @@
+ body {
+            padding: 0;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            font-weight: normal;
+            font-style: normal;
+
+        }
+        .banner {
+            position: relative;
+            background-color: #e4e4e4;
+            height: 300px; /* Adjusted height to accommodate image and search bar */
+            width: 100%;
+
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            justify-content: flex-start; /* Align items at the start vertically */
+            align-items: center; /* Center items horizontally */
+            overflow: hidden;
+        }
+        .banner img {
+            display: block;
+            max-width: 350px;
+            max-height: 200px;
+            margin-top: 20px;
+            z-index: 1; /* Ensure the image is above the SVG wave */
+        }
+        .search-bar {
+            width: 500px;
+            display: flex;
+            align-items: center;
+            margin-top: 20px; /* Space between the image and the search bar */
+            z-index: 1;
+            background-color: #fff;
+            border-radius: 25px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2); /* Optional: Add a subtle shadow */
+        }
+        .search-bar input {
+            border: none;
+            outline: none;
+            font-size: 16px;
+            padding: 0 10px;
+            flex: 1;
+            border-radius: 25px;
+        }
+        .search-bar .fa-search {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .background {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+        .background svg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+        }
+
+.navbar-me {
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center; /* Center the navigation links horizontally */
+    padding: 10px 0;
+}
+
+.navbar-me a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    margin: 0 10px; /* Add some space between the links */
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar-me a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.wrapper{
+    color: #fff;
+    background-color: #000;
+}
+
+.bg-dark-gray {
+    background-color: #333; /* Dark gray color */
+}
